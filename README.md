@@ -1,5 +1,10 @@
 # job-portal
 
+## Description
+```
+Static web page for a job portal using vue.
+```
+
 ## Project setup
 ```
 yarn install
