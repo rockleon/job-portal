@@ -15,8 +15,10 @@
             <br />
             Just browse a job and apply if you need to.</b-row
           >
-          <b-row class="mx-0 pt-5">
-            <b-button pill variant="dark" class="black-button font-18">Get Started</b-button>
+          <b-row class="mx-0 py-5">
+            <b-button pill variant="dark" class="black-button font-18"
+              >Get Started</b-button
+            >
           </b-row>
         </b-row>
       </b-col>
@@ -24,8 +26,18 @@
         <b-img fluid :src="require('../assets/1920.png')"></b-img>
       </b-col>
     </b-row>
-      <!-- <b-img fluid :src="require('../assets/Rectangle527.svg')" class="relative-img"></b-img>
-      <b-img fluid :src="require('../assets/CompanyLogos.svg')" class="relative-img relative-img2"></b-img> -->
+    <!-- <b-row no-gutters> -->
+      <!-- <b-img
+        fluid
+        :src="require('../assets/Rectangle527.svg')"
+        class="relative-img"
+      ></b-img>
+      <b-img
+        fluid
+        :src="require('../assets/CompanyLogos.svg')"
+        class="relative-img relative-img2"
+      ></b-img> -->
+    <!-- </b-row> -->
   </div>
 </template>
 
@@ -61,14 +73,16 @@ export default {
 }
 
 .relative-img {
-  position: relative;
-  top: -240px;
+  position: absolute;
+  /* top: -240px; */
+  /* bottom: -120px; */
   display: block;
   margin: auto;
 }
 
 .relative-img2 {
-  top: -490px;
+  /* top: -490px; */
+  /* bottom: 80px; */
 }
 
 @media screen and (max-width: 1919px) {

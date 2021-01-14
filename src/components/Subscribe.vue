@@ -62,6 +62,6 @@ input {
   padding: 20px;
   font-size: 24px !important;
   position: relative;
-  left: -60px;
+  left: -63px;
 }
 </style>
