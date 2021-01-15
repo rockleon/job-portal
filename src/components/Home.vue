@@ -15,7 +15,7 @@
             <br />
             Just browse a job and apply if you need to.</b-row
           >
-          <b-row class="mx-0 py-5">
+          <b-row class="mx-0 pt-5" style="padding-bottom: 150px;">
             <b-button pill variant="dark" class="black-button font-18"
               >Get Started</b-button
             >
@@ -26,18 +26,15 @@
         <b-img fluid :src="require('../assets/1920.png')"></b-img>
       </b-col>
     </b-row>
-    <!-- <b-row no-gutters> -->
-      <!-- <b-img
-        fluid
-        :src="require('../assets/Rectangle527.svg')"
-        class="relative-img"
-      ></b-img>
-      <b-img
-        fluid
-        :src="require('../assets/CompanyLogos.svg')"
-        class="relative-img relative-img2"
-      ></b-img> -->
-    <!-- </b-row> -->
+    <div class="absolute-div">
+      <div class="image-holder">
+        <b-img
+          fluid
+          :src="require('../assets/all-logos.png')"
+          class="relative-img"
+        ></b-img>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -72,26 +69,23 @@ export default {
   font-size: 22px !important;
 }
 
-.relative-img {
+.absolute-div {
   position: absolute;
-  /* top: -240px; */
-  /* bottom: -120px; */
-  display: block;
-  margin: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.relative-img2 {
-  /* top: -490px; */
-  /* bottom: 80px; */
+.image-holder {
+  position: relative;
+  box-shadow: 0px 20px 80px #7474741A;
+  border-radius: 20px;
+  bottom: 90px;
 }
 
-@media screen and (max-width: 1919px) {
-  .relative-img {
-    width: 87%;
-  }
-  .relative-img2 {
-    width: 65%;
-    top: -445px;
-  }
+.relative-img {
+  position: relative;
+  border-radius: 20px;
 }
 </style>

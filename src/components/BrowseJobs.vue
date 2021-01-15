@@ -1,6 +1,6 @@
 <template>
   <div class="container-0 padded-div">
-    <b-row class="topic-title mx-0 mb-4" align-h="center"
+    <b-row class="topic-title mx-0 mb-4" align-h="center" style="margin-top:150px;"
       >Browse Jobs By Category</b-row
     >
     <b-row cols="3" class="mx-0 mb-3">
