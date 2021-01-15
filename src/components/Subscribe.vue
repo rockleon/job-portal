@@ -36,7 +36,7 @@ export default {
   background-color: #fab8c4;
   color: white;
   border-radius: 218px;
-  padding: 80px 0px;
+  padding: 80px 20px;
 }
 
 .subscribe-title {

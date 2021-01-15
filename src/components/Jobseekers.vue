@@ -29,12 +29,14 @@
           <b-row class="mx-0 pt-4">
             <b-img
               fluid
+              class="arrow-img"
               :src="require('../assets/arrow-left.svg')"
               style="margin-right: 30px"
               @click="previousSlide"
             ></b-img>
             <b-img
               fluid
+              class="arrow-img"
               :src="require('../assets/arrow-right.svg')"
               @click="nextSlide"
             ></b-img>
@@ -144,5 +146,9 @@ export default {
 
 .name-title {
   font-size: 32px;
+}
+
+.arrow-img:hover {
+  cursor: pointer;
 }
 </style>
