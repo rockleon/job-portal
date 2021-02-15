@@ -1,7 +1,11 @@
 <template>
   <div class="horizontal-div">
     <div class="side-div">
-      <b-img fluid :src="require('../assets/checks.svg')"></b-img>
+      <b-img
+        fluid
+        class="checks-image"
+        :src="require('../assets/checks.svg')"
+      ></b-img>
     </div>
     <div class="main-div">
       <b-row class="mx-0">
@@ -47,10 +51,15 @@
     <div class="side-div">
       <b-img
         fluid
+        class="arrows-image"
         :src="require('../assets/Shape.svg')"
         style="margin-top: 90px"
       ></b-img>
-      <b-img fluid :src="require('../assets/checks-dark.svg')"></b-img>
+      <b-img
+        fluid
+        class="checks-image"
+        :src="require('../assets/checks-dark.svg')"
+      ></b-img>
     </div>
   </div>
 </template>
@@ -121,6 +130,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-div {
@@ -150,5 +160,13 @@ export default {
 
 .arrow-img:hover {
   cursor: pointer;
+}
+
+.checks-image {
+  width: 73px;
+}
+
+.arrows-image {
+  width: 15px;
 }
 </style>
